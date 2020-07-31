@@ -1,0 +1,6 @@
+{
+	"owner": %s,
+	"repos_name": %s,
+	"assignee" : %s,
+	"label" : %s
+	}

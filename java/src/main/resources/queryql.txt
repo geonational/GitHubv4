@@ -1,0 +1,27 @@
+query($owner: String!, $repos_name: String!,$label: String!) {
+			repository(owner: $owner, name: $repos_name) {
+			issues(last: 5, states: OPEN, filterBy: {labels: $label}) {
+			edges {
+				node {
+							title
+							url
+							bodyHTML
+					assignees(last: 5) {
+						edges {
+							node {
+								login
+								}
+							}
+						}
+					comments(last: 1) {
+						edges {
+						node {
+							bodyHTML
+							}
+						}
+						}
+					}
+					}
+					}
+			}
+			}
